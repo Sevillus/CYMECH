@@ -2,13 +2,14 @@
   --menu-opacity: 1;
   --contact-bgc: linear-gradient( #666ec4,var(--main-color));
   #menu{
-    margin-right:100px;
+    margin-right:30px;
     margin-bottom: 0;
     opacity: var(--menu-opacity);
     display: flex;
     gap: 30px;
   }
   #more-menu{
+    padding: 10px;
     display: none;
   }
   a:first-child{

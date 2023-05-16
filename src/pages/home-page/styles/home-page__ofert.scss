@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     margin: 30px 0;
+
   }
   .card{
     display: flex;
@@ -20,7 +21,7 @@
     border: none;
     span{
       font-size: 16px;
-      font-weight: 500;
+      font-weight: 400;
     }
     .more-info{
       width: 100%;
@@ -29,9 +30,9 @@
       justify-content: flex-start;
       font-weight: 700;
       gap: 10px;
-      font-size: 30px;
+      font-size: 24px;
       p{
-        font-size: 30px;
+        font-size: 24px;
         margin: 0;
         border-bottom: 3px solid;
         border-top: 3px solid;
@@ -85,7 +86,7 @@
       }
     }
     &__container{
-      gap: 50px;
+      gap: 150px;
     }
     .section-title{
       justify-content: left;

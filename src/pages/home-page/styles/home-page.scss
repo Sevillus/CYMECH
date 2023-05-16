@@ -11,7 +11,6 @@
 @import "home-page__contact";
 @import "home-page__footer";
 body{
-  height: 300vh;
   scroll-behavior: smooth;
 }
 .section-title{
@@ -42,8 +41,10 @@ body{
   color: black;
   transition: 0.4s;
   h3{
+    font-size: 24px;
     margin: 0;
   }
+
   @media (max-width: 750px) {
     gap: 10px;
       width: 100%;
@@ -58,6 +59,27 @@ body{
 .more-info:hover{
   transform: translateX(50px);
 }
+.more-info.book{
+  justify-content: center;
+  width: 100%;
+  h3{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+    i{
+      font-size: 32px;
+    }
+  }
+}
+.more-info.book:hover{
+  transform: scale(1.1);
+}
+
 .logo{
   font-size: 30px;
   font-weight: 600;
@@ -66,3 +88,4 @@ body{
   border-bottom: 3px solid;
   border-top: 3px solid;
 }
+

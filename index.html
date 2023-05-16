@@ -17,27 +17,36 @@
 <div id="home-page">
     <header id="home-page__header">
         <a href="#home-page"><p id="logo">CYMECH</p></a>
-        <nav id="home-page__navigation">
-            <ul id="menu">
-                <a href="#home-page"><p>Strona główna</p></a>
-                <a href="#home-page__news"><p>Aktualności</p></a>
-                <a href="#home-page__about-us"><p>O firmie</p></a>
-                <a href="#home-page__ofert"><p>Oferta</p></a>
-                <a href="#home-page__services"><p>Usługi</p></a>
-                <a href="#home-page__contact"><p>Kontakt</p></a>
-            </ul>
-            <img id="more-menu" src="./assets/images/menu-regular-24.png" alt="">
-        </nav>
+        <div id="header__container">
+            <div class="socials left">
+                <a href="https://www.facebook.com/profile.php?id=100084989836507"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.youtube.com/watch?v=YrU_eSi2FiY"><i class='bx bxl-youtube' ></i></a>
+            </div>
+            <nav id="home-page__navigation">
+                <ul id="menu">
+                    <a href="#home-page"><p>Strona główna</p></a>
+                    <a href="#home-page__news"><p>Aktualności</p></a>
+                    <a href="#home-page__about-us"><p>O firmie</p></a>
+                    <a href="#home-page__ofert"><p>Oferta</p></a>
+                    <a href="#home-page__services"><p>Usługi</p></a>
+                    <a href="#home-page__contact"><p>Kontakt</p></a>
+                </ul>
+                <img id="more-menu" src="./assets/images/menu-regular-24.png" alt="">
+            </nav>
+            <div class="socials right">
+                <a href="https://www.facebook.com/profile.php?id=100084989836507"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.youtube.com/watch?v=YrU_eSi2FiY"><i class='bx bxl-youtube' ></i></a>
+            </div>
+        </div>
+
     </header>
     <section id="home-page__slider">
         <div id="carouselExampleIndicators" class="carousel slide">
-
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img  src="./assets/images/direct.jpg" class="d-block w-100" alt="...">
@@ -64,7 +73,6 @@
                     </div>
                 </div>
             </div>
-
             <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <div class="controlBtn">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -83,6 +91,7 @@
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YrU_eSi2FiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/CXg0bAEeklk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+        <a class="more-info book" href="#"><h3>Piszą o nas<i class='bx bx-book-reader'></i></h3></a>
     </section>
     <section id="home-page__about-us">
         <h2 class="section-title"><p>#</p> O Firmie</h2>
@@ -110,7 +119,7 @@
                 <span>👉 Dwa zabiegi w jednym przejeździe✅
                 Zapraszamy do obejrzenia i kontaktu 😉</span>
                 <img class="card-img" src="./assets/images/podsiewacz.jpg" alt="">
-                                       <a class="more-info" href="#"><h3>CZYTAJ WIĘCEJ</h3> <img src="./assets/images/right-arrow-circle-regular-24.png" alt=""></a>
+                <a class="more-info" href="#"><h3>CZYTAJ WIĘCEJ</h3> <img src="./assets/images/right-arrow-circle-regular-24.png" alt=""></a>
             </div>
             <div class="card">
                 <h2 class="section-title"><p>CYMECH</p>Front 1600</h2>
@@ -201,27 +210,47 @@
 
         </div>
     </section>
-   <!-- <footer id="home-page__footer">
-        <div class="footer__container">
-            <div class="box">
-                <ul id="menu-footer">
-                    <div>
-                        <a href="#home-page"><p>Strona główna</p></a>
-                        <a href="#home-page__news"><p>Aktualności</p></a>
-                        <a href="#home-page__about-us"><p>O firmie</p></a>
-                    </div>
-                    <div>
-                        <a href="#home-page__ofert"><p>Oferta</p></a>
-                        <a href="#home-page__services"><p>Usługi</p></a>
-                        <a href="#home-page__contact"><p>Kontakt</p></a>
-                    </div>
-                    <img id="footer-burger-menu" src="./assets/images/menu-regular-48.png" alt="">
-                </ul>
+    <footer id="home-page__footer">
+        <div id="footer__container">
+            <div class="footer-box">
+                <a href="#home-page"><p class="logo">CYMECH</p></a>
             </div>
-            <div class="box"></div>
-            <div class="box"></div>
+            <div class="footer-box">
+                <h4>Adres
+                    <div>
+                        <p>Olchowiec-Kolonia 9</p>
+                        <p>22-150 Wierzbica</p>
+                    </div>
+                </h4>
+            </div>
+            <div class="footer-box">
+                <h4>Kontakt
+                    <div>
+                        <p><i class='bx bx-phone'></i>693 453 115</p>
+                        <p><i class='bx bx-mail-send'></i>cymech@gmail.com</p>
+                    </div>
+                </h4>
+            </div>
+            <div class="footer-box">
+                <h4>Strefa Klienta
+                    <div>
+                        <p>Polityka prywatności</p>
+                        <p>Regulamin</p>
+                    </div>
+                </h4>
+            </div>
+            <div class="footer-box" id="dev">
+                <h4>Realizacja
+                    <div>
+                        <p><i class='bx bx-phone'></i>725 515 070</p>
+                        <p><i class='bx bx-mail-send'></i>rafal.czarnecki00@gmail.com</p>
+                        <p><i class='bx bxl-git'></i>https://github.com/Sevillus</p>
+                    </div>
+                </h4>
+            </div>
         </div>
-    </footer>-->
+        <span>Kopiowanie treści tylko za zgodą właściciela strony | CYMECH s.c. 2023</span>
+    </footer>
 </div>
 
 
