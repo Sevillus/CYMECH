@@ -3,26 +3,25 @@ const name = document.querySelector("#username")
 const msg = document.querySelector("#msg")
 const errorMsg = document.querySelectorAll(".err")
 const btn = document.querySelector('#sendMail')
+const phone = document.querySelector("#phone")
 
-const inputs = [email, name, msg]
+const inputs = [email, phone, name, msg]
 
 
 
 const checkErrors = () =>{
-    let errors = 3;
-
+    let errors = 4;
     errorMsg.forEach( er =>{
         if(er.style.display !== "block"){
             errors--;
         }
     })
-    console.log(errors)
+
     if(errors !== 0){
         btn.type ="button"
     }else{
         btn.type ="submit"
     }
-
 }
 
 const showError = (i) =>{
@@ -43,13 +42,31 @@ const isEmpty = () =>{
     })
 }
 
-const isTooShort = () =>{
-    if(name.value.length< 3 && name.value.trim() !== ''){
-        errorMsg[1].textContent = "Podane imię jest za krótkie!"
+const properNumber = () =>{
+    if(phone.value.length < 9 && phone.value.length !== 0){
+        errorMsg[1].textContent = "Podany numer telefonu jest za krótki!"
         showError(1)
     }
+    else if(phone.value.length === 0){
+        errorMsg[1].textContent = "Podaj swój numer telefonu"
+    }
+    else if(phone.value.length > 9){
+        errorMsg[1].textContent = "Błędny numer telefonu"
+        showError(1)
+    }
+    else if(phone.value.length === 9){
+       hideError(1)
+    }
+}
+
+
+const isTooShort = () =>{
+    if(name.value.length< 3 && name.value.trim() !== ''){
+        errorMsg[2].textContent = "Podane imię jest za krótkie!"
+        showError(2)
+    }
     else{
-        errorMsg[1].textContent = "Podaj swoje imię"
+        errorMsg[2].textContent = "Podaj swoje imię"
     }
 }
 
@@ -70,6 +87,7 @@ const checkInputs = () =>{
 
     isEmpty();
     isTooShort();
+    properNumber();
     checkEmail(email)
     checkErrors();
 }

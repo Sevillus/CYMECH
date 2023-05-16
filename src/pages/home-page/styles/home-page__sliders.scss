@@ -35,7 +35,7 @@
     .carousel-content{
       padding: 30px;
       width: 70%;
-      top: 100px;
+      top: 0;
       left: 15%;
     }
     .carousel-item{
@@ -49,6 +49,27 @@
     .controlBtn{
       position: absolute;
       top: 50%;
+    }
+  }
+  @media (max-width: 750px) {
+    .carousel-item{
+      margin-top: 100px;
+      height:auto;
+    }
+    .carousel-content{
+      width: 90%;
+      top: 0;
+      left: 5%;
+      padding: 0 10px;
+      h1{
+        font-size: 30px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+    .controlBtn{
+      display: none;
     }
   }
 }

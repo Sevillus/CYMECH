@@ -1,9 +1,10 @@
 #home-page__services{
+
+  overflow: hidden;
+  padding: 10vh 100px;
   .services__text{
     width: 500px;
-
   }
-  padding: 10vh 100px;
   .services__container{
     display: flex;
     justify-content: space-between;
@@ -11,12 +12,44 @@
   .services_slider{
     width: 50%;
   }
-
   h3{
     gap: 10px;
     color: black;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  @media (max-width: 1000px) {
+
+    padding: 150px 100px 0 100px;
+    .services_slider{
+      display: none;
+    }
+    .services__text{
+      width: 100%;
+    }
+    .services__container{
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 750px) {
+
+    padding: 50px 30px 0 30px;
+    .services_slider{
+      display: none;
+    }
+    .services__text{
+      width: 100%;
+    }
+    .services__container{
+      margin-top: 20px;
+    }
+    .logo{
+      font-size: 18px;
+    }
+    h3{
+      font-size: 18px;
+    }
   }
 }

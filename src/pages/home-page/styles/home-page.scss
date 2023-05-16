@@ -23,6 +23,13 @@ body{
   p{
     color: var(--main-color);
     font-size: 60px;
+    margin: 0;
+  }
+  @media  (max-width: 750px){
+      font-size: 36px;
+    p{
+      font-size: 48px;
+    }
   }
 }
 .more-info{
@@ -32,9 +39,21 @@ body{
   justify-content: left;
   align-items: center;
   gap: 30px;
-  font-size: 24px;
   color: black;
   transition: 0.4s;
+  h3{
+    margin: 0;
+  }
+  @media (max-width: 750px) {
+    gap: 10px;
+      width: 100%;
+      h3{
+        font-size: 22px;
+      }
+      img{
+        width: 28px;
+      }
+    }
 }
 .more-info:hover{
   transform: translateX(50px);

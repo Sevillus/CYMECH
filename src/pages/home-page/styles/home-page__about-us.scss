@@ -10,7 +10,6 @@
   &__text{
     text-align: left;
     width: 40%;
-
   }
   .more-info{
     filter:none;
@@ -18,6 +17,27 @@
   }
   #about-us-img{
     width: 50%;
+  }
+  
+  @media (max-width: 1000px) {
+    padding: 150px 100px 0 100px;
+    &__container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__text{
+      text-align: left;
+      width: 100%;
+    }
+    #about-us-img{
+      display: none;
+    }
+  }
+  @media (max-width: 750px){
+    padding: 100px 30px 0 30px;
+
   }
 }
 

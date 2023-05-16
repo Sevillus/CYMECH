@@ -11,17 +11,27 @@
   #more-menu{
     display: none;
   }
+  a:first-child{
+    display: none;
+  }
   a:last-child{
     background: var(--contact-bgc);
-
     p{
       padding: 0 20px;
       color: white;
     }
   }
+
+
+  @media (max-width: 1000px){
+    #menu{
+      margin: 0;
+    }
+  }
   @media (max-width: 750px) {
     --contact-bgc:none;
     #menu{
+
       padding: 20px;
       height: 100vh;
       margin: 0;
@@ -47,5 +57,9 @@
     #more-menu{
       display: block;
     }
+    a:first-child{
+      display: block;
+    }
+
   }
 }

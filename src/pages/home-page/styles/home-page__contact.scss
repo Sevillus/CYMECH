@@ -2,8 +2,15 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
   iframe{
     margin-left: 50px;
+  }
+  @media (max-width: 1000px) {
+      justify-content: center;
+    iframe{
+      display: none;
+    }
+
   }
 }
