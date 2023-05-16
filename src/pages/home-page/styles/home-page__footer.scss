@@ -1,0 +1,32 @@
+#home-page__footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(215, 213, 213, 0.5);
+  color: white;
+  width: 100%;
+  padding: 50px;
+  position: relative;
+  .box{
+    width: 20%;
+  }
+  .footer__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  #menu-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  #footer-burger-menu{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    font-size: 30px;
+  }
+
+
+}

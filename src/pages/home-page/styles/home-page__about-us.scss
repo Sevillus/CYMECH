@@ -1,0 +1,23 @@
+#home-page__about-us{
+  padding: 10vh 100px;
+
+  &__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__text{
+    text-align: left;
+    width: 40%;
+
+  }
+  .more-info{
+    filter:none;
+    color: black;
+  }
+  #about-us-img{
+    width: 50%;
+  }
+}
+

@@ -1,0 +1,22 @@
+#home-page__services{
+  .services__text{
+    width: 500px;
+
+  }
+  padding: 10vh 100px;
+  .services__container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .services_slider{
+    width: 50%;
+  }
+
+  h3{
+    gap: 10px;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

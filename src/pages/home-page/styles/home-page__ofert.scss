@@ -1,0 +1,41 @@
+#home-page__ofert{
+  padding: 10vh 100px;
+
+  .section-title{
+    justify-content: center;
+  }
+  img{
+    max-height: 250px;
+  }
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    border: none;
+    span{
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .more-info{
+      width: 100%;
+    }
+    .section-title{
+      justify-content: flex-start;
+      font-weight: 700;
+      gap: 10px;
+      font-size: 30px;
+      p{
+        font-size: 30px;
+        margin: 0;
+        border-bottom: 3px solid;
+        border-top: 3px solid;
+      }
+    }
+  }
+}

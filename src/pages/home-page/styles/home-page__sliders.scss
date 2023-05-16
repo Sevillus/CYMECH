@@ -1,0 +1,54 @@
+#home-page__slider{
+  .carousel-item{
+    height:100vh;
+  }
+  //zawartość na slajdach
+  .carousel-content{
+    position: absolute;
+    padding: 30px;
+    width: 40%;
+    top: 20%;
+    left: 15%;
+    text-align: left;
+    background: rgb(0,0,0,0.3);
+    h1{
+      font-size: 60px;
+      color: white;
+    }
+    p{
+      color: white;
+    }
+  }
+  .controlBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    border:solid 2px white
+  }
+  .more-info{
+    color: white;
+    filter: brightness(0%) invert(100%);
+  }
+  @media (max-width: 1000px) {
+    .carousel-content{
+      padding: 30px;
+      width: 70%;
+      top: 100px;
+      left: 15%;
+    }
+    .carousel-item{
+      margin-top: 150px;
+      height:50vh;
+      .d-block{
+        object-fit: cover;
+        height: 50vh;
+      }
+    }
+    .controlBtn{
+      position: absolute;
+      top: 50%;
+    }
+  }
+}

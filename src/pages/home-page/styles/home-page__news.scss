@@ -1,0 +1,17 @@
+#home-page__news{
+  padding: 10vh 100px 10px 100px;
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:  70vh;
+  }
+  .section-title{
+    justify-content: center;
+  }
+  iframe{
+    width: 48%;
+    height: 70%;
+  }
+}
+

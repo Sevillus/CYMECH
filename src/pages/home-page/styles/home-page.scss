@@ -1,0 +1,49 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+
+@import "home-page__header.scss";
+@import "home-page__sliders";
+@import "home-page__about-us";
+@import "home-page__news";
+@import "home-page__ofert";
+@import "home-page__services";
+@import "src/pages/home-page/styles/home-page__form-contact.scss";
+@import "home-page__contact";
+@import "home-page__footer";
+body{
+  height: 300vh;
+  scroll-behavior: smooth;
+}
+.section-title{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 48px;
+  p{
+    color: var(--main-color);
+    font-size: 60px;
+  }
+}
+.more-info{
+  width: 70%;
+  padding: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 30px;
+  font-size: 24px;
+  color: black;
+  transition: 0.4s;
+}
+.more-info:hover{
+  transform: translateX(50px);
+}
+.logo{
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--main-color);
+  margin: 0;
+  border-bottom: 3px solid;
+  border-top: 3px solid;
+}
